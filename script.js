@@ -1,7 +1,4 @@
-/* 
-create a function to generate a choice for computer
-returns rock, paper or scissors
-*/
+
 
 function getComputerChoice(choice) {
     let number = (Math.floor(Math.random() * choice));
@@ -16,10 +13,6 @@ function getComputerChoice(choice) {
 }
  
 
-/*
-create a function that prompts user to input a choice
-return choice
-*/
 
 function getHumanChoice() {
     let input = prompt("Rock, paper, scissors!");
@@ -78,12 +71,61 @@ function playGame() {
     }
 }
 
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice(3);
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice(3);
 
     playRound(humanSelection, computerSelection);
 
+    console.log(humanScore);
 
+    (getComputerChoice(3));
+    (getHumanChoice);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice(3);
+
+    playRound(humanSelection, computerSelection);
+
+    console.log(humanScore);
+
+      (getComputerChoice(3));
+    (getHumanChoice);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice(3);
+
+    playRound(humanSelection, computerSelection);
+
+    console.log(humanScore);
+
+      (getComputerChoice(3));
+    (getHumanChoice);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice(3);
+
+    playRound(humanSelection, computerSelection);
+
+    console.log(humanScore);
+
+      (getComputerChoice(3));
+    (getHumanChoice);
+
+    humanSelection = getHumanChoice();
+    computerSelection = getComputerChoice(3);
+
+    playRound(humanSelection, computerSelection);
+
+    console.log(humanScore);
+
+    if (humanScore > computerScore) {
+        console.log("Congrats! You win!");
+    } else if (computerScore > humanScore) {
+        console.log("Womp womp! You lose.");
+    } else if (humanScore === computerScore) {
+        console.log("It's a tie!");
+    }
+    
 
 }
 playGame();
